@@ -20,7 +20,7 @@ const sizes = {
 const styles = {
   outline: "border-2 border-black hover:bg-black text-black hover:text-white",
   primary:
-    "bg-black text-white hover:bg-slate-900  border-2 border-transparent",
+    "bg-primary text-white hover:bg-primary/80 border-2 border-transparent",
 };
 </script>
 

@@ -1,59 +1,60 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Energieausweise",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
+        "Erhalten Sie detaillierte Energieausweise für Ihre Gebäude, um deren Energieeffizienz zu bewerten und Verbesserungspotenziale zu identifizieren.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Sanierungsfahrpläne",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+        "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
     icon: "bx:bxs-window-alt",
   },
   {
-    title: "On-Demand Components",
+    title: "QNG Zertifikate",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
+        "Profitieren Sie von unseren Qualitätsnachweisen für Gebäude (QNG), die Ihre Gebäudequalität und Nachhaltigkeit bescheinigen und Ihr Engagement für umweltfreundliche Praktiken unterstreichen.",
     icon: "bx:bxs-data",
   },
   {
-    title: "Broad Integration",
+    title: "Zentrale Gebäudeverwaltung",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+        "Verwalten Sie all Ihre Gebäudezentralisiert und effizient über unsere Plattform, um Daten zu erfassen, Maßnahmen zu planen und die Energieeffizienz kontinuierlich zu optimieren.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "SEO Enabled",
+    title: "Förderrechner",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+        "Nutzen Sie unsere Förderrechner, um schnell und einfach Fördermöglichkeiten von KfW und BAFA für Ihre Sanierungsprojekte zu ermitteln und finanzielle Unterstützung zu erhalten.",
     icon: "bx:bxs-file-find",
   },
   {
-    title: "Community",
+    title: "Expose Generator",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+        "Generieren Sie professionelle Exposés für Ihre Gebäude mit wenigen Klicks, um potenziellen Interessenten alle relevanten Informationen über Energieeffizienz und Nachhaltigkeit zur Verfügung zu stellen.",
     icon: "bx:bxs-user",
   },
 ];
 </script>
 
 <template>
-  <div class="mt-16 md:mt-0">
+  <div class="mt-16 md:mt-16">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      Unsere Leistungen im Überblick
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      Entdecken Sie die vielseitigen Funktionen von bauzertifikate, die Ihnen helfen, Energieeffizienz zu maximieren und
+      Ihre Gebäude nachhaltig zu verwalten. Erfahren Sie, wie unsere Plattform Ihnen dabei hilft, den Überblick zu
+      behalten und kosteneffiziente Lösungen zu implementieren.
     </p>
   </div>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
     <div v-for="item of features" class="flex gap-4 items-start">
       <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon" />
+        <Icon class="text-white" :name="item.icon"/>
       </div>
       <div>
         <h3 class="font-semibold text-lg">{{ item.title }}</h3>

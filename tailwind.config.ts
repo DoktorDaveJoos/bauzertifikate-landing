@@ -14,7 +14,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        corporate: ["Lato"],
       },
+      colors: {
+        primary: "#0000BD",
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],

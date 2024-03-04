@@ -5,15 +5,15 @@ const menuitems = [
     path: "#",
   },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
+    title: "Über Uns",
     path: "/about",
   },
   {
-    title: "Contact",
+    title: "Partner werden",
+    path: "/about",
+  },
+  {
+    title: "Kontakt",
     path: "/contact",
   },
 ];
@@ -25,9 +25,16 @@ const open = ref(false);
   <LandingContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
+        <a href="/" class="flex items-center">
+
+          <img
+            src="~/assets/img/bauzertifikate_logo_blau.svg"
+            alt="bauzertifikate.de"
+            width="25"
+            height="25" />
+
+          <span class="text-lg font-medium text-black text-corporate ml-2">bauzertifikate.de</span>
+
         </a>
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
@@ -71,7 +78,7 @@ const open = ref(false);
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink
           >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
+          <LandingLink style-name="outline" href="#" size="md" block>Sign up</LandingLink>
         </div>
       </nav>
       <div>
