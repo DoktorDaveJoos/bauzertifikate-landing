@@ -84,7 +84,7 @@ const open = ref(false);
       <div>
         <div class="hidden lg:flex items-center gap-4">
           <a href="https://app.bauzertifikate.de/register">Registrieren</a>
-          <LandingLink href="http://app.bauzertifikate.de/login" size="md">Anmelden</LandingLink>
+          <LandingLink href="https://app.bauzertifikate.de/login" size="md">Anmelden</LandingLink>
         </div>
       </div>
     </header>
