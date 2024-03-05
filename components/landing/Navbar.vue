@@ -83,8 +83,8 @@ const open = ref(false);
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Registrieren</a>
-          <LandingLink href="#" size="md">Anmelden</LandingLink>
+          <a href="https://app.bauzertifikate.de/register">Registrieren</a>
+          <LandingLink href="http://app.bauzertifikate.de/login" size="md">Anmelden</LandingLink>
         </div>
       </div>
     </header>
