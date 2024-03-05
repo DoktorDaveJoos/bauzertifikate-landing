@@ -1,46 +1,56 @@
 <script setup>
+
+import {
+  File,
+  Hammer,
+  Earth,
+  Building,
+  Calculator,
+  Sparkles
+} from 'lucide-vue-next';
+
 const features = [
   {
     title: "Energieausweise",
     description:
         "Erhalten Sie detaillierte Energieausweise für Ihre Gebäude, um deren Energieeffizienz zu bewerten und Verbesserungspotenziale zu identifizieren.",
-    icon: "bx:bxs-briefcase",
+    icon: File,
   },
   {
     title: "Sanierungsfahrpläne",
     description:
-        "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+        "Nutzen Sie unsere Sanierungsfahrpläne, um systematisch und effektiv Sanierungsmaßnahmen zu planen, fördern und umzusetzen, die die Energieeffizienz Ihrer Gebäude verbessern.",
+    icon: Hammer,
   },
   {
     title: "QNG Zertifikate",
     description:
         "Profitieren Sie von unseren Qualitätsnachweisen für Gebäude (QNG), die Ihre Gebäudequalität und Nachhaltigkeit bescheinigen und Ihr Engagement für umweltfreundliche Praktiken unterstreichen.",
-    icon: "bx:bxs-data",
+    icon: Earth,
   },
   {
     title: "Zentrale Gebäudeverwaltung",
     description:
         "Verwalten Sie all Ihre Gebäudezentralisiert und effizient über unsere Plattform, um Daten zu erfassen, Maßnahmen zu planen und die Energieeffizienz kontinuierlich zu optimieren.",
-    icon: "bx:bxs-bot",
+    icon: Building,
   },
   {
     title: "Förderrechner",
     description:
         "Nutzen Sie unsere Förderrechner, um schnell und einfach Fördermöglichkeiten von KfW und BAFA für Ihre Sanierungsprojekte zu ermitteln und finanzielle Unterstützung zu erhalten.",
-    icon: "bx:bxs-file-find",
+    icon: Calculator,
   },
   {
     title: "Expose Generator",
     description:
         "Generieren Sie professionelle Exposés für Ihre Gebäude mit wenigen Klicks, um potenziellen Interessenten alle relevanten Informationen über Energieeffizienz und Nachhaltigkeit zur Verfügung zu stellen.",
-    icon: "bx:bxs-user",
+    icon: Sparkles,
   },
 ];
 </script>
 
 <template>
-  <div class="mt-16 md:mt-16">
+  <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
       Unsere Leistungen im Überblick
     </h2>
@@ -53,8 +63,8 @@ const features = [
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
     <div v-for="item of features" class="flex gap-4 items-start">
-      <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon"/>
+      <div class="bg-black flex items-center justify-center rounded-full p-2 w-8 h-8 shrink-0">
+        <Component :is="item.icon" class="text-white"/>
       </div>
       <div>
         <h3 class="font-semibold text-lg">{{ item.title }}</h3>
