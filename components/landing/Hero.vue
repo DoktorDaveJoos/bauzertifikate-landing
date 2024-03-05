@@ -22,8 +22,7 @@
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
             style-name="primary"
-            href="https://github.com/Gr33nW33n/nuxtship-template"
-            target="_blank"
+            href="/contact"
             rel="noopener"
         >Jetzt Demo anfragen
         </LandingLink
@@ -32,9 +31,8 @@
             size="lg"
             styleName="outline"
             rel="noopener"
-            href="https://github.com/Gr33nW33n/nuxtship-template"
-            target="_blank"
-        >View Repo
+            href="/partner"
+        >Mehr erfahren
         </LandingLink
         >
       </div>

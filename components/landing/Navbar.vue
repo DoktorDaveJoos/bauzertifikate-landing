@@ -2,7 +2,7 @@
 const menuitems = [
   {
     title: "Leistungen",
-    path: "#",
+    path: "/",
   },
   {
     title: "Über Uns",
@@ -10,7 +10,7 @@ const menuitems = [
   },
   {
     title: "Partner werden",
-    path: "/about",
+    path: "/partner",
   },
   {
     title: "Kontakt",
@@ -83,8 +83,8 @@ const open = ref(false);
       </nav>
       <div>
         <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
+          <a href="#">Registrieren</a>
+          <LandingLink href="#" size="md">Anmelden</LandingLink>
         </div>
       </div>
     </header>

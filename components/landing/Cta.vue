@@ -7,7 +7,7 @@
       Sichern Sie sich jetzt Ihren Platz in der Zukunft der Energieberatung.
     </p>
     <div class="flex mt-5">
-      <LandingLink href="#" styleName="inverted">Demo anfragen</LandingLink>
+      <LandingLink href="/contact" styleName="inverted">Demo anfragen</LandingLink>
     </div>
   </div>
 </template>
